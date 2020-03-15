@@ -1,0 +1,174 @@
+  <% include ./partials/header %>
+  <!-- banner -->
+  <section class="banner-sec">
+    <div class="sgl-pro-outr">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="statickbanner"><img src="frontend/images/home-banner.jpg"></div>
+          <% slider.forEach(function(slide, index) { %>
+          <div class="item <% if(index == 0) {%> active<% } %>">
+            <!-- <img src="frontend/images/home-banner.jpg" style="width:100%;"> -->
+            <div class="intro-text">
+              <div class="container">
+                <div class="intro-lead-in wow fadeInLeft animated"><%= slide.slider_first_text %></div>
+                <div class="intro-heading wow fadeInRight animated" data-wow-delay="0.2s"><%= slide.slider_second_text %></div>
+                <div class="intro-foo wow fadeInLeft animated" data-wow-delay="0.4s"><%= slide.slider_third_text %></div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end banner -->
+  <!-- start section-1 -->
+  <section id="features" class="commn_outr">
+    <div class="container">
+      <!-- <div class="commn-hdr white-txt wow fadeInDown animated" data-wow-delay="0.4s">
+					<h3>Features</h3>
+					
+					</div> -->
+      <div class="features-body clearfix">
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.2s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img1.jpg"></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.4s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img2.jpg" alt=""></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.6s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img3.jpg" alt=""></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.6s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img4.jpg" alt=""></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.6s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img5.jpg" alt=""></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp animated" data-wow-delay="0.6s">
+          <div class="review_profile_img">
+            <div class="review_profile_imgc"><img src="frontend/images/featured-img6.jpg" alt=""></div>
+            <!-- <p>Lorem Ipsum is simply dummy text of the prin ting and typesetting industry.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section-1 -->
+  <!-- start section-2 -->
+  <section id="buying-sec" class="commn_outr">
+    <div class="container">
+      <div class="commn-hdr white-txt wow fadeInDown animated" data-wow-delay="0.4s">
+        <h3>How buying works you ask?</h3>
+      </div>
+      <div class="buying-body clearfix">
+        <div class="col-lg-4 col-sm-4 col-xs-12 buying-innerbdy-border wow fadeInUp animated" data-wow-delay="0.2s">
+          <div class="buying-innerbdy">
+            <img src="frontend/images/bodyview-icon1.png">
+            <h4>Inquiry</h4>
+            <p>Sign a Confidentiality Agreement to gather and analyse information about the business. Make an offer
+              when you are ready.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 buying-innerbdy-border wow fadeInUp animated" data-wow-delay="0.4s">
+          <div class="buying-innerbdy">
+            <img src="frontend/images/bodyview-icon2.png">
+            <h4>Due Diligence</h4>
+            <p>A deposit will be held in a Trust Account to allow the buyer to ask and learn the “behind the scenes” of
+              the business and validate the information provided.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 buying-innerbdy-border wow fadeInUp animated" data-wow-delay="0.6s">
+          <div class="buying-innerbdy">
+            <img src="frontend/images/bodyview-icon3.png">
+            <h4>Enter Contracts</h4>
+            <p>Both parties work together to satisfy the contract conditions. When all conditions are satisfied and
+              lifted, the parties can proceed to settlement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End section-2 -->
+   <% include ./partials/testimonial %>
+  <!-- start section-4 -->
+  <section id="contact-sec" class="commn_outr">
+    <div class="container">
+      <div class="col-lg-6 col-sm-6 col-xs-6 text-left">
+        <div class="contact-head wow fadeInDown animated" data-wow-delay="0.4s">
+          <h3>Can’t find what you want? Let us call you back</h3>
+        </div>
+        <div class="contactform_body company_logo_txt wow fadeInLeft" data-wow-delay="0.4s">
+          <% if(errors) { %>
+              <% errors.forEach(function(error){ %>
+                <div class="fga alert alert-danger">
+                  <%= error.msg %>
+                </div>
+              <% }); %>
+          <% } %>
+          <form action="/contact-us" method="post">
+            <div class="col-sm-12 col-md-12">
+              <div class="contact-form">
+                <input type="text" name="contact_name" placeholder="Name">
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="contact-form">
+                <input type="phone" name="contact_phone" placeholder="Phone">
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="contact-form">
+                <textarea name="contact_message" placeholder="What this is About?"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div class="contact-form">
+                <p class="sdf">Jack or Rooney will call you back within 24 hours.</p>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12" style="margin-top: 15px;">
+              <!-- <a href="#" class="button buy-now sendbtn contform-btm">Request a Call Back</a> -->
+              <input type="submit" class="button buy-now sendbtn contform-btm" value="Request a Call Back">
+            </div>
+             
+          </form>
+           
+        </div>
+          <div class="conti">
+            <%- messages('messages', locals) %>
+          </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-6 col-xs-6 imgzoom text-left wow fadeInUp" data-wow-delay="0.6s">
+        <img src="frontend/images/contact-sideimg.png">
+      </div>
+    </div>
+  </section>
+  <!-- start section-4 -->
+ <% include ./partials/footer %>
